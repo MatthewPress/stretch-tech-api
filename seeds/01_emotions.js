@@ -12,8 +12,7 @@ exports.seed = async function(knex) {
     {id: 2, emotionType: 'stress'},
     {id: 3, emotionType: 'cool'},
     {id: 4, emotionType: 'swaggilicious'},
-    {id: 5, emotionType: 'happy'},
-    {id: 6, emotionType: 'mad'}
+    {id: 5, emotionType: 'happy'}
   ]
   );
 };
