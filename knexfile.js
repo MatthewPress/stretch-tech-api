@@ -6,7 +6,7 @@
  module.exports = {
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/cheersforfears',
+    connection: 'postgres://localhost/cheersandfears',
     migrations: {
       directory: './migrations'
     },
@@ -14,18 +14,40 @@
       directory: './seeds'
     },
     useNullAsDefault: true
-  },
-
-  production: {
-    client: 'postgresql',
-    connection: {
-      database: 'postgres://cheersforfears_user:pr33sQyTLsMx3P7atU5p1izEShyktUEW@dpg-cdi4vd2en0hi0cvkrn10-a/cheersforfears',
-      user:     'cheersforfears_user',
-      password: 'pr33sQyTLsMx3P7atU5p1izEShyktUEW'
-    },
-    migrations: {
-      tableName: 'knex_migrations'
-    }
   }
-
 };
+
+
+//   staging: {
+//     client: 'postgresql',
+//     connection: {
+//       database: 'my_db',
+//       user:     'username',
+//       password: 'password'
+//     },
+//     pool: {
+//       min: 2,
+//       max: 10
+//     },
+//     migrations: {
+//       tableName: 'knex_migrations'
+//     }
+//   },
+
+//   production: {
+//     client: 'postgresql',
+//     connection: {
+//       database: 'my_db',
+//       user:     'username',
+//       password: 'password'
+//     },
+//     pool: {
+//       min: 2,
+//       max: 10
+//     },
+//     migrations: {
+//       tableName: 'knex_migrations'
+//     }
+//   }
+
+// };
