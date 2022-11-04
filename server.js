@@ -5,15 +5,15 @@ const { CopyResponse } = require('pg-protocol/dist/messages');
 const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./knexfile')[environment];
 const database = require('knex')(configuration);
+const PORT = process.env.PORT || 3030
 
 app.use(cors())
 app.use(express.json())
 
 app.locals.title = 'Cheers for Fears API'
 
-app.set('port', 3003)
-app.listen(app.get('port'), () => {
-  console.log(`${app.locals.title} is now running on ${app.get('port')}!`)
+app.listen(PORT, () => {
+  console.log(`${app.locals.title} is now running on ${app.get(PORT)}!`)
 })
 
 app.get('/api/v1/emotions', async (request, response) => {
