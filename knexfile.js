@@ -1,12 +1,12 @@
 // Update with your config settings.
-
+const DATABASE_URL = process.env.DATABASE_URL
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
  */
  module.exports = {
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/cheersandfears',
+    connection: 'postgres://localhost/stretch-tech-db',
     migrations: {
       directory: './migrations'
     },
@@ -14,7 +14,24 @@
       directory: './seeds'
     },
     useNullAsDefault: true
-  }
+  },
+
+  production: {
+    client: "postgresql",
+    connection: {
+      connectionString: DATABASE_URL, 
+      ssl: {
+        rejectUnauthorized: false,
+      },
+    },
+    pool: {
+      min: 2,
+      max: 10,
+    },
+    migrations: {
+      tableName: "knex_migrations",
+    },
+  },
 };
 
 

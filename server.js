@@ -11,7 +11,7 @@ app.use(express.json())
 
 app.locals.title = 'Cheers for Fears API'
 
-app.set('port', 3003)
+app.set('port', process.env.PORT || 3003)
 app.listen(app.get('port'), () => {
   console.log(`${app.locals.title} is now running on ${app.get('port')}!`)
 })
