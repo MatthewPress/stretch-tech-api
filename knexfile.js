@@ -19,7 +19,7 @@
   production: {
     client: "postgresql",
     connection: {
-      connectionString: process.env.HEROKU_POSTGRESQL_PUCE_URL, 
+      connectionString: "postgres://lodrgnncesajuj:e637fad108a6d3db25c4ede24082908373183c18fdff03743f71bc4ca7fdf3c0@ec2-34-194-40-194.compute-1.amazonaws.com:5432/d2sdtff13mk8lf", 
       ssl: {
         rejectUnauthorized: false,
       },
