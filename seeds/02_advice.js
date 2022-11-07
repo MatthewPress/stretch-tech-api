@@ -32,5 +32,5 @@
     {id: 24, emotion_id: 5, content: "When negative thoughts creep in, take a moment to ask yourself if you really believe they're true."},
     {id: 25, emotion_id: 5, content: "Have faith in yourself. Even if you aren't the most confident about where you're at, practice accepting your strengths and all you have to offer."},
   ]
-  );
-};
+  )
+}

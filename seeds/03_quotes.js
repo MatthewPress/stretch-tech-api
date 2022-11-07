@@ -32,5 +32,5 @@
     {id: 24, emotion_id: 5, content: "Be proud of who you are, instead of ashamed of how someone else sees you." },
     {id: 25, emotion_id: 5, content: "One day, if not already, your refusal to give up will inspire someone else." },
   ]
-  );
-};
+  )
+}

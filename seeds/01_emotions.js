@@ -12,5 +12,5 @@
     {id: 4, name: 'worry'},
     {id: 5, name: 'doubt'}
   ]
-  );
-};
+  )
+}
