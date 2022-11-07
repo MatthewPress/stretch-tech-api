@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/MatthewPress/stretch-tech">
-    <img src="./src/assets/emotions_monster.png" alt="Logo" width="80" height="80">
+    <img src="https://user-images.githubusercontent.com/100455148/200206675-13942bab-12fe-4315-987c-4ee58ff7d56c.png" alt="Logo" width="80" height="80">
   </a>
   <p>Artwork by <a href="https://www.zestydoesthings.com/realmonsters" target="_blank" rel="noopener noreferrer">Toby Allen</a>.</p>
 
